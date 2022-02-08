@@ -1,0 +1,6 @@
+/api/server.crt
+/api/server.key
+/output/.git
+/output/.gitignore
+/output/server.key
+/output/server.crt
