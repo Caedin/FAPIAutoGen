@@ -1,3 +1,4 @@
+#!/bin/bash
 FROM python:3.10
 WORKDIR /app
 
@@ -13,7 +14,7 @@ RUN apt-get update \
 RUN echo "[FreeTDS]\n\
 Description = FreeTDS Driver\n\
 Driver = /usr/lib/aarch64-linux-gnu/odbc/libtdsodbc.so\n\
-Setup = //usr/lib/aarch64-linux-gnu/odbc/libtdsS.so" >> /etc/odbcinst.ini
+Setup = /usr/lib/aarch64-linux-gnu/odbc/libtdsS.so" >> /etc/odbcinst.ini
 
 
 COPY requirements.txt requirements.txt

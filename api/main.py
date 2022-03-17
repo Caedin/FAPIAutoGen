@@ -28,7 +28,5 @@ if __name__ == '__main__':
         "main:app",
         host="0.0.0.0",
         port=int(os.getenv("API_PORT")),
-        reload=True,
-        ssl_keyfile="./server.key",
-        ssl_certfile="./server.crt"
+        reload=True
     )
